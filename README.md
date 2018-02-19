@@ -45,6 +45,8 @@ Then in our XAML we use the custom renderer for the button:
 
 For the Xamarin.iOS bit, we create a Custom Renderer for the Button element.
 
+([**Link**](https://github.com/enusbaum/XamarinExamples.Forms.MoveWithKeyboard/blob/c07521ed7450b622405639c4de971248da31e21e/iOS/Renderers/CustomButton_IOS.cs#L84-L132) to where the magic happens in the IOS Custom Renderer)
+
 ```csharp
 protected override void OnElementChanged(ElementChangedEventArgs<Button> e)
 {
