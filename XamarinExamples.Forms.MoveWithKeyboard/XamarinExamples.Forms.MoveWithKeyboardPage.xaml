@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:custom="clr-namespace:XamarinExamples.Forms.MoveWithKeyboard.Renderers;assembly=XamarinExamples.Forms.MoveWithKeyboard"
+    x:Class="XamarinExamples.Forms.MoveWithKeyboard.XamarinExamples_Forms_MoveWithKeyboardPage" >
+    <StackLayout Padding="0,15,0,0">
+        <Label Text="Watch the Button move!" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center" />    
+        <Entry Placeholder="Tap here to call up keyboard" HorizontalOptions="CenterAndExpand" />
+        <BoxView VerticalOptions="FillAndExpand" />
+
+        <!-- Custom Button Renderer with the MoveWithKeyboard option set -->
+        <custom:CustomButton BackgroundColor="Gray" TextColor="White" BorderRadius="0" Text="Magic" MoveWithKeyboard="true" Clicked="Handle_Clicked" />
+    </StackLayout>
+
+</ContentPage>
